@@ -510,6 +510,52 @@ ul{margin:0}
   .letter::before{left:16px;font-size:6rem}
 }
 @media (max-width:640px){.principles{grid-template-columns:1fr}.pa{padding:32px 26px}.toc-note{flex-direction:column}}
+
+.st-head{max-width:860px;margin:0 auto;text-align:center}
+.st-head .eyebrow{justify-content:center}
+.st-intro{display:grid;grid-template-columns:.85fr 1.15fr;gap:84px;align-items:center;margin-top:72px}
+.st-media{position:relative;max-width:460px;width:100%}
+.st-media::before{content:"";position:absolute;left:-34px;top:34px;width:140px;height:140px;border-radius:50%;background:var(--gold-wash);z-index:-1}
+.st-media::after{content:"";position:absolute;right:-22px;bottom:46px;width:96px;height:96px;border-radius:50%;border:1.5px solid var(--gold);opacity:.55;pointer-events:none}
+.st-arch{border-radius:230px 230px var(--r) var(--r);overflow:hidden;aspect-ratio:4/4.7;box-shadow:var(--sh-md)}
+.st-arch img{width:100%;height:100%;object-fit:cover}
+.st-text p{font-size:1.05rem}
+.st-text p+p{margin-top:22px}
+.st-text .st-lead{font-family:var(--serif);font-size:clamp(1.3rem,2.1vw,1.68rem);line-height:1.45;color:var(--ink)}
+.st-lead::first-letter{float:left;font-size:3.6em;line-height:.82;padding:8px 14px 0 0;color:var(--gold-deep)}
+.st-kicker{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--gold-deep);margin-bottom:14px}
+.st-path{position:relative;overflow:hidden;isolation:isolate;margin-top:96px;display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center;padding:60px;border-radius:28px;background:var(--gold-wash)}
+.st-path .jali-ink{position:absolute;inset:0;z-index:-1}
+.st-path-text p:last-child{font-family:var(--serif);font-size:clamp(1.15rem,1.6vw,1.35rem);line-height:1.5;color:var(--ink)}
+.st-path ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.st-path li{display:grid;grid-template-columns:1fr 28px 1fr;align-items:center;gap:16px;padding:20px 26px;background:#fff;border-radius:16px;box-shadow:0 10px 30px -18px rgba(48,36,84,.35)}
+.st-path li span{font-family:var(--serif);font-size:1.22rem;line-height:1.25;color:var(--ink)}
+.st-path li span:last-child{text-align:right;font-style:italic;color:var(--gold-deep)}
+.st-path li svg{width:26px;height:26px;color:var(--gold)}
+.st-care{display:grid;grid-template-columns:.85fr 1.15fr;gap:84px;align-items:center;margin-top:96px}
+.st-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.st-steps div{display:flex;flex-direction:column;align-items:center;gap:14px;padding:26px 14px;border:1px solid var(--line);border-radius:20px;background:#fff;text-align:center}
+.st-steps b{font-family:var(--serif);font-weight:400;font-size:1.25rem;color:var(--ink)}
+.st-vision{position:relative;overflow:hidden;isolation:isolate;margin:96px 0 0;padding:84px 48px;border-radius:28px;background:var(--indigo);color:#fff;text-align:center}
+.st-vision .jali{position:absolute;inset:0;z-index:-1}
+.st-vision::before{content:"\201C";display:block;font-family:var(--serif);font-size:7rem;line-height:.6;height:46px;color:var(--gold);opacity:.6}
+.st-vision figcaption{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--gold-soft)}
+.st-vision blockquote{margin:20px auto 0;max-width:900px;font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.45rem,3vw,2.3rem);line-height:1.38}
+@media (max-width:900px){
+  .st-intro,.st-care{grid-template-columns:1fr;gap:44px;margin-top:56px}
+  .st-media{margin:0 auto;max-width:380px}
+  .st-path{grid-template-columns:1fr;gap:34px;padding:36px 26px;margin-top:64px}
+  .st-care{margin-top:64px}
+  .st-vision{margin-top:64px;padding:60px 26px}
+}
+@media (max-width:640px){
+  .st-path li{padding:16px 18px;gap:10px;grid-template-columns:1fr 22px 1fr}
+  .st-path li span{font-size:1.05rem}
+  .st-path li svg{width:22px;height:22px}
+  .st-media::before{left:-10px;width:100px;height:100px}
+  .st-media::after{right:-6px}
+}
+.pr-ic{width:48px;height:48px;border-radius:50%;background:var(--indigo);color:var(--gold-soft);display:inline-flex;align-items:center;justify-content:center}.pr-ic svg{width:22px;height:22px}
 </style>
 <noscript><style>.reveal{opacity:1!important;transform:none!important}.fill-text .w{color:var(--ink)!important}</style></noscript>
 </head>
@@ -575,17 +621,30 @@ ul{margin:0}
 </section>
 
 <!-- OUR STORY -->
-<section class="sec" id="our-story">
-  <div class="wrap story-grid">
-    <div class="story-left">
+<section class="sec st" id="our-story">
+  <div class="wrap">
+    <div class="st-head">
       <p class="eyebrow">Our Story</p>
       <h2 class="h-lg">Turning Access into Agency. <em>Building Pathways to Dignity.</em></h2>
-      <div class="arch reveal"><img src="https://images.unsplash.com/photo-1668258848213-c1967ba6fb01?auto=format&fit=crop&w=800&h=900&q=78" alt="A woman smiling in the doorway of her home" loading="lazy" width="800" height="900"></div>
     </div>
-    <div class="story-body">
-      <p>Seerat Welfare Trust was founded on a belief that every individual deserves the opportunity to shape their future with dignity. We believe that meaningful development begins when people are able to recognise their potential, make informed choices and participate in decisions that affect their lives.</p><p>Across communities, barriers to education, financial knowledge, economic participation and essential services can restrict opportunities and limit individual potential. Addressing these challenges calls for an approach that looks beyond immediate needs and recognises the importance of people&rsquo;s aspirations, capabilities and ability to shape their own futures.</p><p>This belief informs the purpose behind Seerat Welfare Trust: to contribute to a society where people have greater opportunities to learn, participate and pursue a better quality of life. We aspire to support pathways that connect knowledge with action, access with opportunity, and individual progress with stronger communities.</p><p>As the Trust develops, we are committed to listening to communities, learning from local experiences and building initiatives that respond to real needs. We recognise that meaningful and lasting change takes time, collective effort and a commitment to responsible practice.</p>
-      <p class="envision">We envision an India where individuals can exercise greater agency, communities are more resilient, and everyone has a fairer opportunity to live with dignity.</p>
+    <div class="st-intro">
+      <div class="st-media reveal"><div class="st-arch"><img src="https://images.unsplash.com/photo-1668258848213-c1967ba6fb01?auto=format&fit=crop&w=800&h=900&q=78" alt="A woman smiling in the doorway of her home" loading="lazy" width="800" height="900"></div></div>
+      <div class="st-text"><p class="st-lead">Seerat Welfare Trust was founded on a belief that every individual deserves the opportunity to shape their future with dignity. We believe that meaningful development begins when people are able to recognise their potential, make informed choices and participate in decisions that affect their lives.</p><p>Across communities, barriers to education, financial knowledge, economic participation and essential services can restrict opportunities and limit individual potential. Addressing these challenges calls for an approach that looks beyond immediate needs and recognises the importance of people&rsquo;s aspirations, capabilities and ability to shape their own futures.</p></div>
     </div>
+    <div class="st-path">
+      <div class="jali-ink"></div>
+      <div class="st-path-text"><p class="st-kicker">Our Purpose</p><p>This belief informs the purpose behind Seerat Welfare Trust: to contribute to a society where people have greater opportunities to learn, participate and pursue a better quality of life. We aspire to support pathways that connect knowledge with action, access with opportunity, and individual progress with stronger communities.</p></div>
+      <div><p class="st-kicker">Pathways we aspire to support</p><ul><li class="reveal"><span>Knowledge</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>Action</span></li><li class="reveal"><span>Access</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>Opportunity</span></li><li class="reveal"><span>Individual progress</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>Stronger communities</span></li></ul></div>
+    </div>
+    <div class="st-care">
+      <div class="st-steps"><div class="reveal"><span class="pr-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8.5a6 6 0 1 1 12 0c0 3.5-3 4.5-3 7.5a3 3 0 0 1-6 0"/><path d="M9.5 8.5a2.5 2.5 0 0 1 5 0"/></svg></span><b>Listen</b></div><div class="reveal"><span class="pr-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5-10-5Z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg></span><b>Learn</b></div><div class="reveal"><span class="pr-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg></span><b>Build</b></div></div>
+      <div class="st-text"><p>As the Trust develops, we are committed to listening to communities, learning from local experiences and building initiatives that respond to real needs. We recognise that meaningful and lasting change takes time, collective effort and a commitment to responsible practice.</p></div>
+    </div>
+    <figure class="st-vision reveal">
+      <div class="jali"></div>
+      <figcaption>We Envision</figcaption>
+      <blockquote>We envision an India where individuals can exercise greater agency, communities are more resilient, and everyone has a fairer opportunity to live with dignity.</blockquote>
+    </figure>
   </div>
 </section>
 
@@ -623,7 +682,7 @@ ul{margin:0}
   <div class="jali"></div>
   <div class="wrap">
     <div class="split-head">
-      <div><p class="eyebrow">Our Theory of Change</p><h2 class="h-lg">From Community Needs to <em>Sustainable Change</em></h2></div>
+      <div><p class="eyebrow">SWT · Theory of Change</p><h2 class="h-lg">From Community Needs to <em>Sustainable Change</em></h2></div>
       <p>We believe lasting social change begins with understanding people's needs, aspirations and lived experiences. When communities are meaningfully engaged, equipped with relevant knowledge and capabilities, and connected to appropriate services and opportunities, they are better positioned to make informed decisions and take positive action.</p>
     </div>
     <p class="toc-sub">SWT intends to work through collaborative, community-centred initiatives that strengthen individual capabilities, encourage positive practices and build pathways towards greater well-being, resilience and self-reliance.</p>
@@ -680,7 +739,7 @@ ul{margin:0}
       <div class="pill-row" style="margin-top:26px"><a class="pill pill--gold" href="index.html#get-involved">Support Our Mission</a></div>
     </div>
     <div><h4>Explore</h4><ul>
-      <li><a href="about.html">About Us</a></li><li><a href="about.html#our-story">Our Story</a></li><li><a href="about.html#theory-of-change">Theory of Change</a></li><li><a href="about.html#founders-message">Founder&rsquo;s Message</a></li>
+      <li><a href="about.html">About Us</a></li><li><a href="about.html#our-story">Our Story</a></li><li><a href="about.html#theory-of-change">SWT · Theory of Change</a></li><li><a href="about.html#founders-message">Founder&rsquo;s Message</a></li>
       <li><a href="focus-areas.html">Our Focus Areas</a></li><li><a href="leadership.html">Our Leadership</a></li>
       <li><a href="index.html#get-involved">Get Involved</a></li><li><a href="index.html#contact">Contact</a></li></ul></div>
     <div><h4>Our Focus Areas</h4><ul><li><a href="focus-areas.html#education">Education &amp; Digital Empowerment</a></li><li><a href="focus-areas.html#financial">Financial Capability &amp; Inclusion</a></li><li><a href="focus-areas.html#women">Women&rsquo;s Empowerment &amp; Gender Equality</a></li><li><a href="focus-areas.html#skills">Skills, Livelihoods &amp; Economic Empowerment</a></li><li><a href="focus-areas.html#health">Health &amp; Community Well-being</a></li><li><a href="focus-areas.html#environment">Environment &amp; Climate Resilience</a></li></ul></div>
