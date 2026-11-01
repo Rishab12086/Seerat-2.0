@@ -521,6 +521,24 @@ ul{margin:0}
 .pr-grid b{font-weight:600;color:var(--ink);font-size:1rem}
 @media (max-width:1140px){.pr-grid{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:640px){.pr-grid{grid-template-columns:repeat(2,1fr)}.pr-grid li{padding:20px 18px}}
+
+/* Our Commitment background */
+.commit{isolation:isolate;background:
+  radial-gradient(900px 520px at 8% 0%,rgba(255,255,255,.7),transparent 62%),
+  radial-gradient(760px 560px at 100% 100%,rgba(180,168,84,.30),transparent 66%),
+  radial-gradient(520px 420px at 0% 100%,rgba(48,36,84,.06),transparent 70%),
+  linear-gradient(160deg,#F7F0D6 0%,#F1E7C2 55%,#ECDFB2 100%)}
+.commit::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='64' viewBox='0 0 56 64'><g fill='none' stroke='%23857A2B' stroke-opacity='.16' stroke-width='1'><path d='M28 1 55 16.5v31L28 63 1 47.5v-31z'/><path d='M28 15 42 23v16l-14 8-14-8V23z'/><circle cx='28' cy='31' r='3'/></g></svg>");background-size:56px 64px;
+  -webkit-mask-image:radial-gradient(120% 90% at 0% 100%,#000 0%,rgba(0,0,0,.35) 35%,transparent 62%);mask-image:radial-gradient(120% 90% at 0% 100%,#000 0%,rgba(0,0,0,.35) 35%,transparent 62%)}
+.commit::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(133,122,43,.45) 30%,rgba(133,122,43,.45) 70%,transparent) top/100% 1px no-repeat,linear-gradient(90deg,transparent,rgba(133,122,43,.45) 30%,rgba(133,122,43,.45) 70%,transparent) bottom/100% 1px no-repeat}
+.commit > .wrap{position:relative;z-index:1}
+.commit .mandala{z-index:0;opacity:.32;width:640px;height:640px;right:-230px;top:46%;
+  -webkit-mask-image:radial-gradient(circle,#000 38%,rgba(0,0,0,.5) 58%,transparent 72%);mask-image:radial-gradient(circle,#000 38%,rgba(0,0,0,.5) 58%,transparent 72%)}
+.commit .pr-wrap::before{content:"";position:absolute;left:0;right:0;top:-36px;height:1px;background:linear-gradient(90deg,rgba(133,122,43,.35),rgba(133,122,43,.12) 60%,transparent)}
+.commit .pr-grid li{background:rgba(255,255,255,.72);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-color:rgba(180,168,84,.4);box-shadow:0 14px 34px -26px rgba(48,36,84,.45)}
+.commit .pr-grid li:hover{background:#fff}
+@media (max-width:900px){.commit .mandala{width:440px;height:440px;right:-220px;opacity:.22}}
 </style>
 <noscript><style>.reveal{opacity:1!important;transform:none!important}.fill-text .w{color:var(--ink)!important}</style></noscript>
 </head>
