@@ -537,6 +537,14 @@ ul{margin:0}
   .commit .lotus{width:440px;height:440px;top:-90px;right:-230px;opacity:.4}
 }
 @media (max-width:640px){.pr-grid{grid-template-columns:repeat(2,1fr);gap:12px}.pr-grid li{padding:24px 10px}.pr-grid b{font-size:1.1rem}.pr-label{gap:16px}}
+
+/* Hero: blend photo into the purple panel */
+.hero-media::after{background:linear-gradient(90deg,var(--indigo-deep) 0%,rgba(31,23,64,.85) 8%,rgba(31,23,64,.55) 18%,rgba(31,23,64,.25) 30%,rgba(31,23,64,.07) 42%,transparent 52%)}
+.hero-text .jali{-webkit-mask-image:linear-gradient(90deg,#000 70%,transparent 100%);mask-image:linear-gradient(90deg,#000 70%,transparent 100%)}
+@media (max-width:900px){
+  .hero-media::after{background:linear-gradient(0deg,var(--indigo-deep) 0%,rgba(31,23,64,.75) 14%,rgba(31,23,64,.3) 32%,transparent 52%)}
+  .hero-text .jali{-webkit-mask-image:none;mask-image:none}
+}
 </style>
 <noscript><style>.reveal{opacity:1!important;transform:none!important}.fill-text .w{color:var(--ink)!important}</style></noscript>
 </head>
