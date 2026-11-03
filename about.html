@@ -470,7 +470,7 @@ ul{margin:0}
 .quote--sm{font-size:clamp(1.25rem,2.2vw,1.7rem);max-width:40ch}
 .track--desc li p{font-size:.86rem;line-height:1.55;color:rgba(255,255,255,.68);margin-top:10px;padding-right:8px}
 .toc-note{margin-top:70px;padding:24px 30px;border-radius:16px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.04);display:flex;gap:18px;align-items:flex-start;color:rgba(255,255,255,.75);font-size:.95rem}
-.toc-note svg{width:26px;height:26px;flex:0 0 auto;color:var(--gold-soft);margin-top:2px}
+.toc-note-ic{flex:0 0 auto;width:46px;height:46px;border-radius:50%;background:rgba(230,220,166,.14);border:1px solid rgba(230,220,166,.3);display:inline-flex;align-items:center;justify-content:center;color:var(--gold-soft)}.toc-note-ic svg{width:22px;height:22px}.toc-note{align-items:center}
 .toc-sub{margin-top:28px;color:rgba(255,255,255,.75);max-width:70ch}
 .commit-intro{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px}
 .commit-intro p{color:var(--ink)}
@@ -574,9 +574,9 @@ ul{margin:0}
     <li><a href="leadership.html">Our Leadership</a></li>
     <li><a href="index.html#get-involved">Get Involved</a></li>
     <li><a href="index.html#contact">Contact</a></li>
-    <li class="m-cta"><a class="pill pill--ink" href="index.html#get-involved">Partner With Us</a></li>
+    <li class="m-cta"><a class="pill pill--ink" href="index.html?interest=collaborate#contact" data-interest="collaborate">Partner With Us</a></li>
   </ul></nav>
-  <a class="pill pill--ink hdr-cta" href="index.html#get-involved">Partner With Us</a>
+  <a class="pill pill--ink hdr-cta" href="index.html?interest=collaborate#contact" data-interest="collaborate">Partner With Us</a>
   <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
 </div></header>
 <main>
@@ -688,7 +688,7 @@ ul{margin:0}
     <p class="toc-sub">SWT intends to work through collaborative, community-centred initiatives that strengthen individual capabilities, encourage positive practices and build pathways towards greater well-being, resilience and self-reliance.</p>
     <p class="path-label">Our Pathway to Change</p>
     <ol class="track track--desc"><li><span class="node">01</span><div><span class="st">Understand</span><h3>Needs and Aspirations</h3><p>Identify community priorities, challenges, strengths and aspirations.</p></div></li><li><span class="node">02</span><div><span class="st">Engage</span><h3>Awareness and Participation</h3><p>Build awareness, trust and meaningful participation in the development process.</p></div></li><li><span class="node">03</span><div><span class="st">Build</span><h3>Knowledge, Skills and Confidence</h3><p>Strengthen the capabilities individuals and communities need to make informed decisions and pursue opportunities.</p></div></li><li><span class="node">04</span><div><span class="st">Connect</span><h3>Access and Opportunities</h3><p>Facilitate connections with relevant services, institutions, resources and opportunities.</p></div></li><li><span class="node">05</span><div><span class="st">Enable</span><h3>Decisions and Action</h3><p>Support people in translating knowledge and access into informed choices and practical action.</p></div></li><li><span class="node">06</span><div><span class="st">Strengthen</span><h3>Well-being and Resilience</h3><p>Contribute to stronger coping capacities, improved well-being and greater resilience.</p></div></li><li><span class="node">07</span><div><span class="st">Transform</span><h3>Self-Reliant Communities</h3><p>Work towards more inclusive, resilient and self-reliant communities where people can realise their potential and participate meaningfully in development.</p></div></li></ol>
-    <div class="toc-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span>This Theory of Change represents SWT's intended pathway towards impact. Its assumptions, implementation and outcomes will be examined through community feedback, monitoring, evaluation and evidence-informed learning.</span></div>
+    <div class="toc-note"><span class="toc-note-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 0 0-14.9-4L3 9"/><path d="M3 4v5h5"/><path d="M4 13a8 8 0 0 0 14.9 4L21 15"/><path d="M21 20v-5h-5"/></svg></span><span>This Theory of Change represents SWT's intended pathway towards impact. Its assumptions, implementation and outcomes will be examined through community feedback, monitoring, evaluation and evidence-informed learning.</span></div>
   </div>
 </section>
 
@@ -728,7 +728,7 @@ ul{margin:0}
 
 <section class="sec cta-band"><div class="wrap">
   <p class="eyebrow">Get Involved</p><h2 class="h-lg">Be Part of <em>the Journey</em></h2>
-  <div class="pill-row" style="justify-content:center"><a class="pill pill--ink" href="mailto:seerattrust@gmail.com?subject=Partnering%20with%20Seerat%20Welfare%20Trust">Partner With Us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="pill pill--outline" href="leadership.html">Meet Our Leadership</a></div>
+  <div class="pill-row" style="justify-content:center"><a class="pill pill--ink" href="index.html?interest=collaborate#contact" data-interest="collaborate">Partner With Us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="pill pill--outline" href="leadership.html">Meet Our Leadership</a></div>
 </div></section>
 </main>
 <footer class="ftr"><div class="wrap">
@@ -736,7 +736,7 @@ ul{margin:0}
     <div>
       <a class="brand" href="index.html"><img src="images/swt-logo-dark.svg" alt="" width="71" height="69"><span><strong>Seerat Welfare Trust</strong><small>Impacting Lives, Inspiring Change</small></span></a>
       <p class="tagl">Empowering People. Strengthening Communities. Building an Inclusive India.</p>
-      <div class="pill-row" style="margin-top:26px"><a class="pill pill--gold" href="index.html#get-involved">Support Our Mission</a></div>
+      <div class="pill-row" style="margin-top:26px"><a class="pill pill--gold" href="index.html?interest=support#contact" data-interest="support">Support Our Mission</a></div>
     </div>
     <div><h4>Explore</h4><ul>
       <li><a href="about.html">About Us</a></li><li><a href="about.html#our-story">Our Story</a></li><li><a href="about.html#theory-of-change">SWT · Theory of Change</a></li><li><a href="about.html#founders-message">Founder&rsquo;s Message</a></li>
