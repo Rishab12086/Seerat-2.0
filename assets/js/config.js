@@ -1,12 +1,12 @@
 /*
  * Site settings.
- * To connect the enquiry form, replace FORMSPREE_ID below with the form ID
- * from your Formspree dashboard (the part after /f/ in the form endpoint).
- * This is the only place the ID lives.
+ * Enquiry form: Formspree form "Seerat Website form final".
+ * To use a different form, replace the ID after /f/ below with the form ID
+ * from your Formspree dashboard. This is the only place the ID lives.
  */
 window.SWT_CONFIG = {
   contactForm: {
-    endpoint: "https://formspree.io/f/FORMSPREE_ID",
+    endpoint: "https://formspree.io/f/xeaawjnw",
     fallbackEmail: "swt@seerat.org.in"
   }
 };
