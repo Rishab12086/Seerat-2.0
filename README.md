@@ -43,7 +43,7 @@ styles in a `<style>` block in the `<head>`.
 - The form is in the Contact section of `index.html`. Submissions are sent to
   Formspree, which emails them to the address set up in your Formspree account.
 - **The Formspree form ID lives in one place only:** `assets/js/config.js`
-  (currently `xeaawjnw`, the "Seerat Website form final" form). To switch
+  (currently `moeezwro`, on the Formspree account for swt@seerat.org.in). To switch
   forms, replace the ID after `/f/` in the `endpoint` line.
 - If Formspree can't be reached, pressing "Send" opens the visitor's email
   app with a message to `swt@seerat.org.in` instead.
