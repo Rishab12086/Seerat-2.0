@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://seerat.org.in/sitemap.xml

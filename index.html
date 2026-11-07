@@ -6,12 +6,26 @@
 <title>Seerat Welfare Trust — Empowering People. Strengthening Communities.</title>
 <meta name="description" content="Seerat Welfare Trust is a registered charitable organisation in Delhi, advancing inclusive and sustainable community development.">
 <meta name="theme-color" content="#302454">
+<link rel="canonical" href="https://seerat.org.in/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Seerat Welfare Trust">
 <meta property="og:title" content="Seerat Welfare Trust — Empowering People. Strengthening Communities.">
 <meta property="og:description" content="Seerat Welfare Trust is a registered charitable organisation in Delhi, advancing inclusive and sustainable community development.">
-<meta name="twitter:card" content="summary">
-<link rel="icon" type="image/svg+xml" href="images/swt-logo.svg">
+<meta property="og:url" content="https://seerat.org.in/">
+<meta property="og:image" content="https://seerat.org.in/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Seerat Welfare Trust: Empowering People. Strengthening Communities. Building an Inclusive India.">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Seerat Welfare Trust — Empowering People. Strengthening Communities.">
+<meta name="twitter:description" content="Seerat Welfare Trust is a registered charitable organisation in Delhi, advancing inclusive and sustainable community development.">
+<meta name="twitter:image" content="https://seerat.org.in/assets/og-image.jpg">
+<meta name="twitter:image:alt" content="Seerat Welfare Trust: Empowering People. Strengthening Communities. Building an Inclusive India.">
+<link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com">
@@ -553,54 +567,59 @@ ul{margin:0}
 .contact-blurb{margin-top:22px;color:rgba(255,255,255,.82);font-size:1.05rem;max-width:34ch}
 .contact-wrap--form .contact-row{flex-direction:column;align-items:flex-start;justify-content:flex-start;margin-top:32px;gap:10px}
 .cf{background:#fff;color:var(--ink);border-radius:24px;padding:34px;display:grid;gap:18px;box-shadow:var(--sh-lg)}
-.cf-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}
+.cf-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
 .cf-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.cf-field{display:grid;gap:7px;border:0;margin:0;padding:0;min-width:0}
-.cf-field > span,.cf-field legend{margin-bottom:10px!important;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--indigo);padding:0;margin-bottom:0}
-.cf-field input,.cf-field textarea{width:100%;font:inherit;font-size:.98rem;color:var(--ink);background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:13px 14px;transition:border-color .2s,box-shadow .2s,background .2s}
+.cf-field{display:grid;gap:7px;min-width:0}
+.cf-field label{font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--indigo)}
+.cf-field .req{color:var(--gold-deep)}
+.cf-field .opt{font-weight:500;letter-spacing:0;text-transform:none;color:rgba(30,30,40,.5)}
+.cf-field input,.cf-field textarea,.cf-field select{width:100%;font:inherit;font-size:.98rem;color:var(--ink);background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:13px 14px;transition:border-color .2s,box-shadow .2s,background .2s}
+.cf-field select{appearance:none;-webkit-appearance:none;padding-right:42px;cursor:pointer;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none' stroke='%23302454' stroke-width='1.8' stroke-linecap='round'><path d='m2.5 4.5 3.5 3.5 3.5-3.5'/></svg>");background-repeat:no-repeat;background-position:right 16px center}
+.cf-field select:invalid{color:rgba(30,30,40,.55)}
 .cf-field textarea{resize:vertical;min-height:110px}
-.cf-field input:focus,.cf-field textarea:focus{outline:none;background:#fff;border-color:var(--gold);box-shadow:0 0 0 4px rgba(180,168,84,.18)}
-.cf-opts{display:flex;flex-wrap:wrap;gap:8px}
-.cf-opt{position:relative;cursor:pointer}
-.cf-opt input{position:absolute;opacity:0;width:1px;height:1px}
-.cf-opt span{display:inline-block;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--cream);font-size:.9rem;font-weight:500;color:var(--indigo);transition:.2s}
-.cf-opt:hover span{border-color:var(--gold)}
-.cf-opt input:checked + span{background:var(--indigo);border-color:var(--indigo);color:#fff}
-.cf-opt input:focus-visible + span{box-shadow:0 0 0 4px rgba(180,168,84,.35)}
+.cf-field input:focus,.cf-field textarea:focus,.cf-field select:focus{outline:none;background-color:#fff;border-color:var(--gold);box-shadow:0 0 0 4px rgba(180,168,84,.22)}
 .cf-submit{justify-self:start;border:0;cursor:pointer;font:inherit}
 .cf-submit[disabled]{opacity:.6;cursor:wait}
 .cf-status{font-size:.95rem;min-height:1.4em;margin:0}
 .cf-status.ok{color:#2f6b3a}.cf-status.err{color:#a3372b}
+.c-chip--wa svg{color:#7fd6a0}
 @media (max-width:900px){
   .contact-wrap--form{padding:48px 22px}
   .contact-grid{grid-template-columns:1fr;gap:36px}
   .cf{padding:24px 20px}
 }
 @media (max-width:640px){.cf-row{grid-template-columns:1fr}}
+
+/* Skip link */
+.skip-link{position:absolute;left:16px;top:-60px;z-index:1000;padding:12px 18px;border-radius:10px;background:var(--indigo);color:#fff;font-weight:600;text-decoration:none;transition:top .2s}
+.skip-link:focus{top:12px;outline:3px solid var(--gold);outline-offset:2px}
+main:focus{outline:none}
+.ftr-bottom a{color:inherit;text-decoration:underline;text-underline-offset:3px}.ftr-bottom a:hover{color:#fff}.ftr-sep{margin:0 6px;opacity:.5}
 </style>
 <noscript><style>.reveal{opacity:1!important;transform:none!important}.fill-text .w{color:var(--ink)!important}</style></noscript>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <div class="announce"><div class="wrap">
   <span>Registered Charitable Trust &nbsp;·&nbsp; Reg. No. <b>948</b><span class="opt"> &nbsp;·&nbsp; NGO DARPAN <b>DL/2023/0350141</b></span></span>
-  <span><a href="mailto:seerattrust@gmail.com">seerattrust@gmail.com</a> &nbsp;·&nbsp; <a href="tel:+919650877118">+91 96508 77118</a></span>
+  <span><a href="mailto:swt@seerat.org.in">swt@seerat.org.in</a> &nbsp;·&nbsp; <a href="tel:+919650877118">+91 96508 77118</a></span>
 </div></div>
 <header class="hdr" id="header"><div class="wrap hdr-in">
   <a class="brand" href="index.html"><img src="images/swt-logo.svg" alt="Seerat Welfare Trust logo" width="71" height="69"><span><strong>Seerat Welfare Trust</strong><small>Impacting Lives, Inspiring Change</small></span></a>
   <nav class="nav" id="nav" aria-label="Main"><ul>
-    <li class="is-active"><a href="index.html">Home</a></li>
+    <li class="is-active"><a href="index.html" aria-current="page">Home</a></li>
     <li class="has-sub"><a href="about.html">About Us <svg class="chev" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg></a>
       <ul class="sub"><li><a href="about.html#who-we-are">Who We Are</a></li><li><a href="about.html#our-story">Our Story</a></li><li><a href="about.html#why-seerat">Why Seerat?</a></li><li><a href="about.html#vision-mission">Vision &amp; Mission</a></li><li><a href="about.html#theory-of-change">Theory of Change</a></li><li><a href="about.html#commitment">Our Commitment</a></li><li><a href="about.html#founders-message">Founder&rsquo;s Message</a></li></ul></li>
     <li class="has-sub"><a href="focus-areas.html">Our Focus Areas <svg class="chev" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg></a><ul class="sub"><li><a href="focus-areas.html#education">Education &amp; Digital Empowerment</a></li><li><a href="focus-areas.html#financial">Financial Capability &amp; Inclusion</a></li><li><a href="focus-areas.html#women">Women&rsquo;s Empowerment &amp; Gender Equality</a></li><li><a href="focus-areas.html#skills">Skills, Livelihoods &amp; Economic Empowerment</a></li><li><a href="focus-areas.html#health">Health &amp; Community Well-being</a></li><li><a href="focus-areas.html#environment">Environment &amp; Climate Resilience</a></li></ul></li>
     <li><a href="leadership.html">Our Leadership</a></li>
     <li><a href="index.html#get-involved">Get Involved</a></li>
     <li><a href="index.html#contact">Contact</a></li>
-    <li class="m-cta"><a class="pill pill--ink" href="index.html?interest=collaborate#contact" data-interest="collaborate">Partner With Us</a></li>
+    <li class="m-cta"><a class="pill pill--ink" href="index.html#contact" data-topic="partner">Partner With Us</a></li>
   </ul></nav>
-  <a class="pill pill--ink hdr-cta" href="index.html?interest=collaborate#contact" data-interest="collaborate">Partner With Us</a>
+  <a class="pill pill--ink hdr-cta" href="index.html#contact" data-topic="partner">Partner With Us</a>
   <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
 </div></header>
-<main>
+<main id="main" tabindex="-1">
 <!-- HERO -->
 <section class="hero">
   <div class="hero-grid">
@@ -610,7 +629,7 @@ ul{margin:0}
       <h1><span>Empowering People.</span><span>Strengthening Communities.</span><span><em>Building an Inclusive India.</em></span></h1>
       <p class="hero-lead">Seerat Welfare Trust is a registered charitable organisation committed to advancing inclusive and sustainable community development. We aim to empower individuals and strengthen communities by expanding access to knowledge, opportunities and the capabilities needed to lead dignified and self-reliant lives.</p>
       <div class="hero-chips"><small>Our focus areas include</small><ul class="chips"><li>Education &amp; digital literacy</li><li>Financial capability &amp; inclusion</li><li>Women &amp; girls</li><li>Skills &amp; livelihoods</li><li>Health &amp; community well-being</li><li>Environment &amp; climate action</li></ul></div>
-      <div class="pill-row"><a class="pill pill--gold" href="focus-areas.html">Explore Our Focus Areas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="pill pill--line" href="index.html?interest=collaborate#contact" data-interest="collaborate">Partner With Us</a></div>
+      <div class="pill-row"><a class="pill pill--gold" href="focus-areas.html">Explore Our Focus Areas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="pill pill--line" href="index.html#contact" data-topic="partner">Partner With Us</a></div>
     </div>
     <div class="hero-media" aria-hidden="true">
       <img src="https://images.unsplash.com/photo-1630178836733-3d61d8974258?auto=format&fit=crop&w=1100&h=1200&q=78" alt="" fetchpriority="high" width="1100" height="1200">
@@ -747,13 +766,13 @@ ul{margin:0}
         <p style="margin-top:16px">At Seerat Welfare Trust, we believe everyone deserves the opportunity to learn, grow and thrive with dignity. We invite individuals, institutions and partners to contribute through volunteering, collaboration, sharing expertise and supporting community-led initiatives. Together, we can create lasting change and build more inclusive, resilient communities.</p></div>
     </div>
     <div class="inv-grid">
-      <a class="inv reveal" href="index.html?interest=volunteer#contact" data-interest="volunteer"><img src="https://images.unsplash.com/photo-1596450514537-fae68a81346b?auto=format&fit=crop&w=760&h=950&q=78" alt="A volunteer supporting an elderly community member" loading="lazy" width="760" height="950">
+      <a class="inv reveal" href="index.html#contact" data-topic="volunteer"><img src="https://images.unsplash.com/photo-1596450514537-fae68a81346b?auto=format&fit=crop&w=760&h=950&q=78" alt="A volunteer supporting an elderly community member" loading="lazy" width="760" height="950">
         <div class="inv-top"><h3>Volunteer</h3><p>Share Your Time. Contribute Your Expertise. Make a Difference.</p></div>
         <div class="inv-bot"><p>Contribute your knowledge, professional expertise and time to support community development and help advance SWT&rsquo;s mission.</p><div class="card-bar"><span>Volunteer With Us</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div></a>
-      <a class="inv reveal" href="index.html?interest=collaborate#contact" data-interest="collaborate"><img src="https://images.unsplash.com/photo-1708593337380-6f97a307696f?auto=format&fit=crop&w=760&h=950&q=78" alt="Women from a community meeting together" loading="lazy" width="760" height="950">
+      <a class="inv reveal" href="index.html#contact" data-topic="partner"><img src="https://images.unsplash.com/photo-1708593337380-6f97a307696f?auto=format&fit=crop&w=760&h=950&q=78" alt="Women from a community meeting together" loading="lazy" width="760" height="950">
         <div class="inv-top"><h3>Collaborate</h3><p>Build Partnerships. Create Shared Value. Enable Change.</p></div>
         <div class="inv-bot"><p>Explore opportunities to co-design initiatives, share expertise and develop partnerships that respond to community needs and advance shared development priorities.</p><div class="card-bar"><span>Partner With Us</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div></a>
-      <a class="inv reveal" href="index.html?interest=support#contact" data-interest="support"><img src="https://images.unsplash.com/photo-1524069290683-0457abfe42c3?auto=format&fit=crop&w=760&h=950&q=78" alt="Smiling schoolchildren waving" loading="lazy" width="760" height="950">
+      <a class="inv reveal" href="index.html#contact" data-topic="support"><img src="https://images.unsplash.com/photo-1524069290683-0457abfe42c3?auto=format&fit=crop&w=760&h=950&q=78" alt="Smiling schoolchildren waving" loading="lazy" width="760" height="950">
         <div class="inv-top"><h3>Support</h3><p>Your Support Can Help Create Opportunities.</p></div>
         <div class="inv-bot"><p>Support SWT&rsquo;s mission to expand access to knowledge, capabilities and opportunities for underserved individuals and communities.</p><div class="card-bar"><span>Support Our Mission</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div></a>
     </div>
@@ -771,27 +790,29 @@ ul{margin:0}
         <p class="tag">Empowering People. Strengthening Communities. Building an Inclusive India.</p>
         <p class="contact-blurb">Want to volunteer, collaborate or support our work? Share your details and we&rsquo;ll get back to you.</p>
         <div class="contact-row">
-          <a class="c-chip" href="mailto:seerattrust@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg> seerattrust@gmail.com</a>
+          <a class="c-chip" href="mailto:swt@seerat.org.in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg> swt@seerat.org.in</a>
           <a class="c-chip" href="tel:+919650877118"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3H5a2 2 0 0 0-2 2.2C3.6 14 10 20.4 18.8 21a2 2 0 0 0 2.2-2v-2l-4-1.5-2 2c-2.5-1-4.5-3-5.5-5.5l2-2L10 6Z"/></svg> +91 96508 77118</a>
+          <a class="c-chip c-chip--wa" href="https://wa.me/919650877118" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.6l-4.5.9Z"/><path d="M9 8.6c.2-.5.5-.6.8-.6h.6c.2 0 .4.1.5.4l.7 1.6c.1.2 0 .5-.1.6l-.5.6c-.1.2-.1.4 0 .5.6 1 1.5 1.9 2.6 2.5.2.1.4.1.5 0l.6-.6c.2-.2.4-.2.6-.1l1.6.7c.3.1.4.3.4.5v.6c0 .3-.2.6-.6.8-.7.3-1.6.4-2.6 0a10 10 0 0 1-4.6-4.4c-.4-.9-.4-1.9-.1-2.6Z"/></svg> Chat on WhatsApp</a>
           <span class="c-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg> Delhi, India</span>
         </div>
       </div>
-      <form class="cf" id="enquiry" action="https://formsubmit.co/seerattrust@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="New enquiry from the Seerat Welfare Trust website">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="_honey" class="cf-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <fieldset class="cf-field"><legend>I&rsquo;d like to</legend><div class="cf-opts"><label class="cf-opt"><input type="radio" name="interest" value="Volunteer" data-key="volunteer"><span>Volunteer</span></label><label class="cf-opt"><input type="radio" name="interest" value="Collaborate / Partner" data-key="collaborate"><span>Collaborate / Partner</span></label><label class="cf-opt"><input type="radio" name="interest" value="Support" data-key="support"><span>Support</span></label><label class="cf-opt"><input type="radio" name="interest" value="General enquiry" data-key="general" checked><span>General enquiry</span></label></div></fieldset>
+      <form class="cf" id="enquiry" action="mailto:swt@seerat.org.in" method="post" enctype="text/plain">
+        <div class="cf-hp" aria-hidden="true"><label for="cf-gotcha">Leave this field empty</label><input type="text" id="cf-gotcha" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+        <div class="cf-field"><label for="cf-topic">I&rsquo;d like to <span class="req" aria-hidden="true">*</span></label>
+          <select id="cf-topic" name="topic" required>
+            <option value="" disabled selected>Choose an option</option>
+            <option value="Volunteer" data-topic="volunteer">Volunteer</option>
+            <option value="Partner With Us" data-topic="partner">Partner With Us</option>
+            <option value="Support Our Mission" data-topic="support">Support Our Mission</option>
+            <option value="General enquiry" data-topic="general">General enquiry</option>
+          </select></div>
         <div class="cf-row">
-          <label class="cf-field"><span>Full name *</span><input type="text" name="name" required autocomplete="name"></label>
-          <label class="cf-field"><span>Email *</span><input type="email" name="email" required autocomplete="email"></label>
+          <div class="cf-field"><label for="cf-name">Full name <span class="req" aria-hidden="true">*</span></label><input type="text" id="cf-name" name="name" required autocomplete="name"></div>
+          <div class="cf-field"><label for="cf-email">Email <span class="req" aria-hidden="true">*</span></label><input type="email" id="cf-email" name="email" required autocomplete="email"></div>
         </div>
-        <div class="cf-row">
-          <label class="cf-field"><span>Phone</span><input type="tel" name="phone" autocomplete="tel"></label>
-          <label class="cf-field"><span>Organisation</span><input type="text" name="organisation" autocomplete="organization"></label>
-        </div>
-        <label class="cf-field"><span>Message</span><textarea name="message" rows="4" placeholder="Tell us a little about how you&rsquo;d like to get involved"></textarea></label>
-        <button class="pill pill--ink cf-submit" type="submit">Send Message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <div class="cf-field"><label for="cf-phone">Phone <span class="opt">(optional)</span></label><input type="tel" id="cf-phone" name="phone" autocomplete="tel"></div>
+        <div class="cf-field"><label for="cf-message">Message <span class="req" aria-hidden="true">*</span></label><textarea id="cf-message" name="message" rows="4" required></textarea></div>
+        <button class="pill pill--ink cf-submit" type="submit">Send Message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
         <p class="cf-status" role="status" aria-live="polite"></p>
       </form>
     </div>
@@ -803,7 +824,7 @@ ul{margin:0}
     <div>
       <a class="brand" href="index.html"><img src="images/swt-logo-dark.svg" alt="" width="71" height="69"><span><strong>Seerat Welfare Trust</strong><small>Impacting Lives, Inspiring Change</small></span></a>
       <p class="tagl">Empowering People. Strengthening Communities. Building an Inclusive India.</p>
-      <div class="pill-row" style="margin-top:26px"><a class="pill pill--gold" href="index.html?interest=support#contact" data-interest="support">Support Our Mission</a></div>
+      <div class="pill-row" style="margin-top:26px"><a class="pill pill--gold" href="index.html#contact" data-topic="support">Support Our Mission</a></div>
     </div>
     <div><h4>Explore</h4><ul>
       <li><a href="about.html">About Us</a></li><li><a href="about.html#our-story">Our Story</a></li><li><a href="about.html#theory-of-change">SWT · Theory of Change</a></li><li><a href="about.html#founders-message">Founder&rsquo;s Message</a></li>
@@ -812,12 +833,12 @@ ul{margin:0}
     <div><h4>Our Focus Areas</h4><ul><li><a href="focus-areas.html#education">Education &amp; Digital Empowerment</a></li><li><a href="focus-areas.html#financial">Financial Capability &amp; Inclusion</a></li><li><a href="focus-areas.html#women">Women&rsquo;s Empowerment &amp; Gender Equality</a></li><li><a href="focus-areas.html#skills">Skills, Livelihoods &amp; Economic Empowerment</a></li><li><a href="focus-areas.html#health">Health &amp; Community Well-being</a></li><li><a href="focus-areas.html#environment">Environment &amp; Climate Resilience</a></li></ul></div>
     <div><h4>Contact</h4><ul>
       <li>Seerat Welfare Trust<br>New Delhi, India</li>
-      <li><a href="mailto:seerattrust@gmail.com">seerattrust@gmail.com</a></li>
+      <li><a href="mailto:swt@seerat.org.in">swt@seerat.org.in</a></li>
       <li><a href="tel:+919650877118">+91 96508 77118</a></li></ul></div>
   </div>
   <div class="ftr-legal"><span>Trust Registration No. <b>948</b></span><span>NGO DARPAN ID <b>DL/2023/0350141</b></span><span>Registered in <b>Delhi, India</b></span></div>
   <div class="ftr-word" aria-hidden="true">Seerat</div>
-  <div class="ftr-bottom">© <span id="yr">2026</span> Seerat Welfare Trust. All rights reserved.</div>
+  <div class="ftr-bottom">© <span id="yr">2026</span> Seerat Welfare Trust. All rights reserved. <span class="ftr-sep">·</span> <a href="privacy.html">Privacy Policy</a></div>
 </div></footer>
 <script>
 (function(){
@@ -858,32 +879,7 @@ if(car){var step=function(d){var c=car.querySelector('.card');car.scrollBy({left
   document.getElementById('next').addEventListener('click',function(){step(1);});}
 })();
 </script>
-<script>
-(function(){
-  var f=document.getElementById('enquiry');if(!f)return;
-  var status=f.querySelector('.cf-status'),btn=f.querySelector('.cf-submit');
-  function pick(k){var r=f.querySelector('input[name="interest"][data-key="'+k+'"]');if(r)r.checked=true;}
-  var q=new URLSearchParams(location.search).get('interest');if(q)pick(q);
-  document.querySelectorAll('a[data-interest]').forEach(function(a){a.addEventListener('click',function(e){
-    e.preventDefault();pick(a.getAttribute('data-interest'));
-    document.getElementById('contact').scrollIntoView({behavior:'smooth'});
-    try{history.replaceState(null,'','?interest='+a.getAttribute('data-interest')+'#contact');}catch(_){}
-    setTimeout(function(){var n=f.querySelector('input[name="name"]');if(n)n.focus({preventScroll:true});},600);
-  });});
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(!f.checkValidity()){f.reportValidity();return;}
-    if(f._honey.value)return;
-    var interest=(f.querySelector('input[name="interest"]:checked')||{}).value||'General enquiry';
-    f._subject.value='New website enquiry: '+interest+' \u2014 '+f.name.value.trim();
-    btn.disabled=true;status.className='cf-status';status.textContent='Sending\u2026';
-    fetch(f.action.replace('formsubmit.co/','formsubmit.co/ajax/'),{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
-      .then(function(r){return r.json().then(function(d){if(!r.ok||String(d.success)!=='true')throw new Error(d.message||'failed');});})
-      .then(function(){f.reset();pick('general');status.className='cf-status ok';status.textContent='Thank you! Your message has been sent. We\u2019ll be in touch soon.';})
-      .catch(function(){status.className='cf-status err';status.textContent='Sorry, something went wrong. Please email us at seerattrust@gmail.com.';})
-      .then(function(){btn.disabled=false;});
-  });
-})();
-</script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/contact.js"></script>
 </body>
 </html>
