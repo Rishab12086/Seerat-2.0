@@ -42,12 +42,11 @@ styles in a `<style>` block in the `<head>`.
 
 - The form is in the Contact section of `index.html`. Submissions are sent to
   Formspree, which emails them to the address set up in your Formspree account.
-- **The Formspree form ID lives in one place only:** `assets/js/config.js`.
-  Replace `FORMSPREE_ID` in
-  `endpoint: "https://formspree.io/f/FORMSPREE_ID"` with your form's ID.
-- Until a real ID is set (or if Formspree can't be reached), pressing "Send"
-  opens the visitor's email app with a message to `swt@seerat.org.in`
-  instead.
+- **The Formspree form ID lives in one place only:** `assets/js/config.js`
+  (currently `xeaawjnw`, the "Seerat Website form final" form). To switch
+  forms, replace the ID after `/f/` in the `endpoint` line.
+- If Formspree can't be reached, pressing "Send" opens the visitor's email
+  app with a message to `swt@seerat.org.in` instead.
 - Buttons that open the form use `href="index.html#contact"` with a
   `data-topic` attribute: `volunteer`, `partner`, `support` or `general`.
   The form scrolls into view with that option selected. No form data ever goes
